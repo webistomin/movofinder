@@ -1,4 +1,9 @@
 .page-header {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background-color: @tmdb--blue;
 
   &__logo {
     flex-shrink: 0;
@@ -36,6 +41,7 @@
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
+    outline: none;
   }
 
   &__input {
@@ -55,7 +61,7 @@
     }
   }
 
-  &__toggler {
+  &__toggle {
     width: 30px;
     height: 60px;
     flex-shrink: 0;
@@ -69,6 +75,7 @@
       background-color: @tmdb--green;
       border-radius: 27px;
       left: 0;
+      transition: all 0.3s ease-in-out;
 
       &:nth-child(1) {
         top: 18px;
@@ -80,6 +87,26 @@
 
       &:nth-child(3) {
         top: 38px
+      }
+    }
+
+    &--opened {
+      & span {
+        transition: all 0.3s ease-in-out;
+
+        &:nth-child(1) {
+          top: 28px;
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          top: 28px;
+          transform: rotate(-45deg);
+        }
       }
     }
   }
