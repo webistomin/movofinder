@@ -14,6 +14,11 @@
 To emphasise this I use inline style="display: none" -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
   <symbol id="icon-search"><path d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z"/></symbol>
+  <symbol id="icon-calendar" viewBox="0 0 24 24"><path d="M24 2v22H0V2h3v1c0 1.103.897 2 2 2s2-.897 2-2V2h10v1c0 1.103.897 2 2 2s2-.897 2-2V2h3zm-2 6H2v14h20V8zm-2-7a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V1zM6 3a1 1 0 1 1-2 0V1a1 1 0 1 1 2 0v2zm6.687 13.482c0-.802-.418-1.429-1.109-1.695.528-.264.836-.807.836-1.503 0-1.346-1.312-2.149-2.581-2.149-1.477 0-2.591.925-2.659 2.763h1.645c-.014-.761.271-1.315 1.025-1.315.449 0 .933.272.933.869 0 .754-.816.862-1.567.797v1.28c1.067 0 1.704.067 1.704.985 0 .724-.548 1.048-1.091 1.048-.822 0-1.159-.614-1.188-1.452H7.001C6.969 18.002 8.115 19 9.843 19c1.543 0 2.844-.943 2.844-2.518zM17 19v-7.718h-1.392c-.173 1.154-.995 1.491-2.171 1.459v1.346h1.852V19H17z"/></symbol>
+  <symbol id="icon-play" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zM9 17V7l9 5.146L9 17z"/></symbol>
+  <symbol id="icon-popular"><path d="M8.625 0C9.235 7.189 3 9.664 3 15.996c0 4.301 3.069 7.972 9 8.004 5.931.032 9-4.414 9-8.956 0-4.141-2.062-8.046-5.952-10.474.924 2.607-.306 4.988-1.501 5.808.07-3.337-1.125-8.289-4.922-10.378zm4.711 13c3.755 3.989 1.449 9-1.567 9C9.934 22 8.99 20.735 9 19.423c.019-2.433 2.737-2.435 4.336-6.423z"/></symbol>
+  <symbol id="icon-rated" viewBox="0 0 24 24"><path d="M21.406 9.558c-1.21-.051-2.87-.278-3.977-.744C18.238 5.531 18.682 0 15.233 0c-1.861 0-2.351 1.668-2.833 3.329-1.548 5.336-3.946 6.816-6.4 7.401V10H0v12h6v-.904c2.378.228 4.119.864 6.169 1.746 1.257.541 3.053 1.158 5.336 1.158 2.538 0 4.295-.997 5.009-3.686.5-1.877 1.486-7.25 1.486-8.25 0-1.648-1.168-2.446-2.594-2.506zM4 20H2v-8h2v8zm15.896-5.583s.201.01 1.069-.027c1.082-.046 1.051 1.469.004 1.563l-1.761.099c-.734.094-.656 1.203.141 1.172 0 0 .686-.017 1.143-.041 1.068-.056 1.016 1.429.04 1.551-.424.053-1.745.115-1.745.115-.811.072-.706 1.235.109 1.141l.771-.031c.822-.074 1.003.825-.292 1.661-1.567.881-4.685.131-6.416-.614C10.72 20.041 8.521 19.072 6 19v-6c3.264-.749 6.328-2.254 8.321-9.113C15.219.795 16 1.956 16 4.461c0 2.071-.49 3.786-.921 5.533 1.061.543 3.371 1.402 6.12 1.556 1.055.059 1.024 1.455-.051 1.584l-1.394.167s-.608 1.111.142 1.116z"/></symbol>
+
 </svg>
 
 <header class="page-header">
@@ -43,8 +48,8 @@ To emphasise this I use inline style="display: none" -->
     <ul class="main-nav__list">
       <li class="main-nav__item">
         <a href="javascript: void(0);" class="main-nav__link">
-          <svg class="main-nav__icon" width="20" height="20">
-            <use x="0" y="0" xlink:href="#icon-vk-mobile"></use>
+          <svg class="main-nav__icon" width="21" height="24">
+            <use x="0" y="0" xlink:href="#icon-popular"></use>
           </svg>
           Popular
         </a>
@@ -52,7 +57,7 @@ To emphasise this I use inline style="display: none" -->
       <li class="main-nav__item">
         <a href="javascript: void(0);" class="main-nav__link">
           <svg class="main-nav__icon" width="20" height="20">
-            <use x="0" y="0" xlink:href="#icon-vk-mobile"></use>
+            <use x="0" y="0" xlink:href="#icon-rated"></use>
           </svg>
           Top rated
         </a>
@@ -60,7 +65,7 @@ To emphasise this I use inline style="display: none" -->
       <li class="main-nav__item">
         <a href="javascript: void(0);" class="main-nav__link">
           <svg class="main-nav__icon" width="20" height="20">
-            <use x="0" y="0" xlink:href="#icon-vk-mobile"></use>
+            <use x="0" y="0" xlink:href="#icon-calendar"></use>
           </svg>
           Upcoming
         </a>
@@ -68,7 +73,7 @@ To emphasise this I use inline style="display: none" -->
       <li class="main-nav__item">
         <a href="javascript: void(0);" class="main-nav__link">
           <svg class="main-nav__icon" width="20" height="20">
-            <use x="0" y="0" xlink:href="#icon-vk-mobile"></use>
+            <use x="0" y="0" xlink:href="#icon-play"></use>
           </svg>
           Now playing
         </a>
