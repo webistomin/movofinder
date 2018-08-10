@@ -13,10 +13,7 @@
 <!-- this svg is a container for svg icons and should not appear on the page.
 To emphasise this I use inline style="display: none" -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-  <symbol id="icon-fb-mobile" viewBox="0 0 10 19">
-    <path
-      d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z"/>
-  </symbol>
+  <symbol id="icon-search"><path d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z"/></symbol>
 </svg>
 
 <header class="page-header">
@@ -26,19 +23,23 @@ To emphasise this I use inline style="display: none" -->
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" alt="Movofinder" width="60" height="60" class="page-header__img">
+          <img src="img/logo-mobile.svg" alt="Movofinder" width="50" height="50" class="page-header__img">
         </picture>
       </a>
     </div>
     <div class="page-header__group">
       <input type="text" class="page-header__input" placeholder="Search for a movie..." id="search">
-      <label for="search" class="page-header__label"></label>
+      <label for="search" class="page-header__label">
+        <svg class="page-header__icon" width="20" height="20">
+          <use x="0" y="0" xlink:href="#icon-search"></use>
+        </svg>
+      </label>
     </div>
     <div class="page-header__toggler">
       <span></span><span></span><span></span>
     </div>
   </div>
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed">
     <ul class="main-nav__list">
       <li class="main-nav__item">
         <a href="javascript: void(0);" class="main-nav__link">

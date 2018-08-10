@@ -1,0 +1,87 @@
+.page-header {
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__inner {
+    padding: 20px 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid @tmdb--green;
+  }
+
+  &__group {
+    width: 100%;
+    position: relative;
+    margin: 0 10px;
+    border-left: 1px solid @tmdb--green;
+    border-right: 1px solid @tmdb--green;
+  }
+
+  &__label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+
+  &__icon {
+    fill: @tmdb--green;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 74px;
+    background-color: transparent;
+    border: 0;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 20px;
+    outline: none;
+
+    &::placeholder {
+      color: @tmdb--green;
+      font-size: 10px;
+    }
+  }
+
+  &__toggler {
+    width: 30px;
+    height: 60px;
+    flex-shrink: 0;
+    position: relative;
+
+    & span {
+      position: absolute;
+      display: block;
+      width: inherit;
+      height: 4px;
+      background-color: @tmdb--green;
+      border-radius: 27px;
+      left: 0;
+
+      &:nth-child(1) {
+        top: 18px;
+      }
+
+      &:nth-child(2) {
+        top: 28px;
+      }
+
+      &:nth-child(3) {
+        top: 38px
+      }
+    }
+  }
+
+}
