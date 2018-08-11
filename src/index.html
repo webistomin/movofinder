@@ -6,6 +6,15 @@
         content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TMDb: Movie Searcher</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#081c24">
+  <meta name="apple-mobile-web-app-title" content="TMDB: Movie Searcher">
+  <meta name="application-name" content="TMDB: Movie Searcher">
+  <meta name="msapplication-TileColor" content="#081c24">
+  <meta name="theme-color" content="#081c24">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -97,66 +106,126 @@ To emphasise this I use inline style="display: none" -->
         <time class="slider__date" datetime="2017-01-01">2017</time>
         <span class="slider__category">Action</span>
       </div>
+      <p class="slider__desc">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</p>
       <a href="#" class="slider__btn btn">Play trailer</a>
     </div>
   </section>
 
   <section class="movies">
-    <div class="movies__group">
-      <h2 class="movies__heading heading">Popular movies</h2>
-      <a href="javascript: void(0);" class="movies__load">View All</a>
+    <div class="movies__inner">
+      <div class="movies__group">
+        <h2 class="movies__heading heading">Popular movies</h2>
+        <a href="javascript: void(0);" class="movies__load">View All</a>
+      </div>
+      <ul class="movies__list">
+        <li class="movies__item">
+          <a href="javascript: void(0);" class="movies__link">
+            <figure class="movies__figure">
+              <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
+              <figcaption class="movies__title">Prison</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="movies__item">
+          <a href="javascript: void(0);" class="movies__link">
+            <figure class="movies__figure">
+              <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
+              <figcaption class="movies__title">Prison</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="movies__item">
+          <a href="javascript: void(0);" class="movies__link">
+            <figure class="movies__figure">
+              <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
+              <figcaption class="movies__title">Prison</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="movies__item">
+          <a href="javascript: void(0);" class="movies__link">
+            <figure class="movies__figure">
+              <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
+              <figcaption class="movies__title">Prison</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="movies__item">
+          <a href="javascript: void(0);" class="movies__link">
+            <figure class="movies__figure">
+              <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
+              <figcaption class="movies__title">Prison</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="movies__item">
+          <a href="javascript: void(0);" class="movies__link">
+            <figure class="movies__figure">
+              <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
+              <figcaption class="movies__title">Prison</figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+      <button class="movies__btn btn">Load more</button>
     </div>
-    <ul class="movies__list">
-      <li class="movies__item">
-        <a href="javascript: void(0);" class="movies__link">
-          <figure class="movies__figure">
-            <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
-            <figcaption class="movies__title">Prison</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li class="movies__item">
-        <a href="javascript: void(0);" class="movies__link">
-          <figure class="movies__figure">
-            <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
-            <figcaption class="movies__title">Prison</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li class="movies__item">
-        <a href="javascript: void(0);" class="movies__link">
-          <figure class="movies__figure">
-            <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
-            <figcaption class="movies__title">Prison</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li class="movies__item">
-        <a href="javascript: void(0);" class="movies__link">
-          <figure class="movies__figure">
-            <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
-            <figcaption class="movies__title">Prison</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li class="movies__item">
-        <a href="javascript: void(0);" class="movies__link">
-          <figure class="movies__figure">
-            <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
-            <figcaption class="movies__title">Prison</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li class="movies__item">
-        <a href="javascript: void(0);" class="movies__link">
-          <figure class="movies__figure">
-            <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
-            <figcaption class="movies__title">Prison</figcaption>
-          </figure>
-        </a>
-      </li>
-    </ul>
-    <button class="movies__btn btn">Load more</button>
+    <div class="movies__inner">
+      <div class="movies__group">
+        <h2 class="movies__heading heading">Top Rated</h2>
+        <a href="javascript: void(0);" class="movies__load">View All</a>
+      </div>
+      <ul class="movies__list">
+        <li class="movies__item">
+          <a href="javascript: void(0);" class="movies__link">
+            <figure class="movies__figure">
+              <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
+              <figcaption class="movies__title">Prison</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="movies__item">
+          <a href="javascript: void(0);" class="movies__link">
+            <figure class="movies__figure">
+              <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
+              <figcaption class="movies__title">Prison</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="movies__item">
+          <a href="javascript: void(0);" class="movies__link">
+            <figure class="movies__figure">
+              <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
+              <figcaption class="movies__title">Prison</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="movies__item">
+          <a href="javascript: void(0);" class="movies__link">
+            <figure class="movies__figure">
+              <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
+              <figcaption class="movies__title">Prison</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="movies__item">
+          <a href="javascript: void(0);" class="movies__link">
+            <figure class="movies__figure">
+              <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
+              <figcaption class="movies__title">Prison</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="movies__item">
+          <a href="javascript: void(0);" class="movies__link">
+            <figure class="movies__figure">
+              <img src="img/example.jpg" alt="" class="movies__img" width="370" height="556">
+              <figcaption class="movies__title">Prison</figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+      <button class="movies__btn btn">Load more</button>
+    </div>
   </section>
 </main>
 <footer class="page-footer">
