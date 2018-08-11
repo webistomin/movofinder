@@ -18,7 +18,8 @@ To emphasise this I use inline style="display: none" -->
   <symbol id="icon-play" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zM9 17V7l9 5.146L9 17z"/></symbol>
   <symbol id="icon-popular"><path d="M8.625 0C9.235 7.189 3 9.664 3 15.996c0 4.301 3.069 7.972 9 8.004 5.931.032 9-4.414 9-8.956 0-4.141-2.062-8.046-5.952-10.474.924 2.607-.306 4.988-1.501 5.808.07-3.337-1.125-8.289-4.922-10.378zm4.711 13c3.755 3.989 1.449 9-1.567 9C9.934 22 8.99 20.735 9 19.423c.019-2.433 2.737-2.435 4.336-6.423z"/></symbol>
   <symbol id="icon-rated" viewBox="0 0 24 24"><path d="M21.406 9.558c-1.21-.051-2.87-.278-3.977-.744C18.238 5.531 18.682 0 15.233 0c-1.861 0-2.351 1.668-2.833 3.329-1.548 5.336-3.946 6.816-6.4 7.401V10H0v12h6v-.904c2.378.228 4.119.864 6.169 1.746 1.257.541 3.053 1.158 5.336 1.158 2.538 0 4.295-.997 5.009-3.686.5-1.877 1.486-7.25 1.486-8.25 0-1.648-1.168-2.446-2.594-2.506zM4 20H2v-8h2v8zm15.896-5.583s.201.01 1.069-.027c1.082-.046 1.051 1.469.004 1.563l-1.761.099c-.734.094-.656 1.203.141 1.172 0 0 .686-.017 1.143-.041 1.068-.056 1.016 1.429.04 1.551-.424.053-1.745.115-1.745.115-.811.072-.706 1.235.109 1.141l.771-.031c.822-.074 1.003.825-.292 1.661-1.567.881-4.685.131-6.416-.614C10.72 20.041 8.521 19.072 6 19v-6c3.264-.749 6.328-2.254 8.321-9.113C15.219.795 16 1.956 16 4.461c0 2.071-.49 3.786-.921 5.533 1.061.543 3.371 1.402 6.12 1.556 1.055.059 1.024 1.455-.051 1.584l-1.394.167s-.608 1.111.142 1.116z"/></symbol>
-
+  <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M12 4.248C8.852-1.154 0 .423 0 7.192 0 11.853 5.571 16.619 12 23c6.43-6.381 12-11.147 12-15.808C24 .4 15.125-1.114 12 4.248z"/></symbol>
+  <symbol id="icon-github" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></symbol>
 </svg>
 
 <header class="page-header">
@@ -84,7 +85,20 @@ To emphasise this I use inline style="display: none" -->
 
 <main class="page-content">
   <section class="slider">
-
+    <div class="slider__inner">
+      <div class="slider__rating">
+        <svg class="slider__icon" width="25" height="25">
+            <use x="0" y="0" xlink:href="#icon-heart"></use>
+        </svg>
+        <span class="slider__rate">6.7</span>
+      </div>
+      <h1 class="slider__heading heading">Avengers</h1>
+      <div class="slider__info">
+        <time class="slider__date" datetime="2017-01-01">2017</time>
+        <span class="slider__category">Action</span>
+      </div>
+      <a href="#" class="slider__btn btn">Play trailer</a>
+    </div>
   </section>
 
   <section class="movies">
@@ -142,9 +156,20 @@ To emphasise this I use inline style="display: none" -->
         </a>
       </li>
     </ul>
-    <button class="movies__btn">Load more</button>
+    <button class="movies__btn btn">Load more</button>
   </section>
 </main>
+<footer class="page-footer">
+  <div class="page-footer__inner">
+    <h2 class="page-footer__heading">THE MOVIE DB APP</h2>
+    <h3 class="page-footer__subtitle">Made with Vue.js</h3>
+    <a href="https://github.com/webistomin/movofinder" class="page-footer__link">
+      <svg class="page-footer__icon" width="20" height="20">
+        <use x="0" y="0" xlink:href="#icon-github"></use>
+      </svg>
+      View code</a>
+  </div>
+</footer>
 
 <script src="js/script.min.js"></script>
 </body>

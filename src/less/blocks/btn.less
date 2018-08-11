@@ -1,0 +1,44 @@
+.btn {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid @tmdb--green;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: @tmdb--green;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover {
+    color: @tmdb--blue;
+  }
+
+  &:hover::before {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  &:active {
+    opacity: 0.4;
+    transition: none;
+  }
+}

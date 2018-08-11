@@ -1,5 +1,6 @@
 .movies {
   padding: 10px;
+  padding-bottom: 60px;
 
   &__list {
     display: flex;
@@ -16,12 +17,12 @@
 
     &:hover {
       transition: transform 0.3s ease-in-out;
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
 
     &:active {
       transition: transform 0.3s ease-in-out;
-      transform: scale(0.9);
+      transform: scale(0.95);
     }
   }
 
@@ -69,18 +70,8 @@
   }
 
   &__btn {
-    display: block;
-    width: 150px;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-sizing: border-box;
-    border: 2px solid @tmdb--green;
-    text-align: center;
-
-    &:hover {
-
-    }
+    margin-bottom: 20px;
   }
+
+
 }
