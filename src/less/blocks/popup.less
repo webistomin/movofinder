@@ -64,6 +64,7 @@
     padding-bottom: 50px;
     background-image: url('../img/bg-slider.jpg');
     background-size: cover;
+    background-position: center;
 
     &::before {
       width: 100%;
@@ -103,6 +104,51 @@
     text-transform: uppercase;
     font-weight: 700;
     padding-left: 20px;
+  }
+
+  &__details {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  @media @screen-xs {
+    &__button {
+      width: 60px;
+      height: 60px;
+
+      &::before,
+      &::after {
+        width: 30px;
+      }
+    }
+
+    &__heading {
+      padding-top: 70px;
+    }
+  }
+
+  @media @screen-sm {
+    &__caption {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 18px;
+      padding-top: 40px;
+
+      &--small {
+        padding-top: 20px;
+        font-size: 16px;
+      }
+    }
+
+    &__detail {
+      font-size: 20px;
+    }
+  }
+
+  @media @screen-md {
+    
   }
 
 }
