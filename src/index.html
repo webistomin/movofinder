@@ -16,7 +16,7 @@
   <meta name="apple-mobile-web-app-title" content="TMDB: Movie Searcher">
   <meta name="application-name" content="TMDB: Movie Searcher">
   <meta name="msapplication-TileColor" content="#081c24">
-  <meta name="theme-color" content="#081c24">
+  <meta name="theme-color" content="#01d277">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -82,11 +82,11 @@ To emphasise this I use inline style="display: none" -->
         Search movie
       </label>
     </div>
-    <div class="page-header__toggle">
+    <button class="page-header__toggle">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
   </div>
   <nav class="main-nav main-nav--closed">
     <ul class="main-nav__list">
@@ -275,6 +275,38 @@ To emphasise this I use inline style="display: none" -->
       View code</a>
   </div>
 </footer>
+
+<div class="popup">
+  <div class="popup__inner">
+    <button class="popup__button" type="button">Close</button>
+    <div class="popup__heading">
+      <img src="img/example.jpg" alt="" class="popup__heading" width="370" height="556">
+      <div class="popup__desc">
+        <h1 class="popup__title">
+          Avengers: Infinity War
+        </h1>
+        <p class="popup__desc">An entire universe. Once and for all.</p>
+      </div>
+    </div>
+    <p class="popup__text">
+      As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.
+    </p>
+    <div class="popup__details">
+      <div class="popup__group">
+        <span class="popup__detail">Genres</span>
+        <p class="popup__text popup__text--small">
+          Adventure, Science Fiction, Fantasy, Action
+        </p>
+      </div>
+      <div class="popup__group">
+        <span class="popup__detail">Release Date</span>
+        <p class="popup__text popup__text--small">
+          25 Apr 2018
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/script.min.js"></script>
 <script>
