@@ -37,6 +37,7 @@
 
   &__icon {
     fill: @tmdb--green;
+    opacity: 0.5;
   }
 
   &__link {
@@ -58,8 +59,12 @@
     outline: none;
 
     &::placeholder {
-      color: @tmdb--green;
+      color: rgba(1, 210, 119, 0.8);
       font-size: 12px;
+    }
+
+    &:focus + .page-header__label .page-header__icon {
+      opacity: 1;
     }
   }
 
