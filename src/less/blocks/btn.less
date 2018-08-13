@@ -10,9 +10,10 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   font-weight: 700;
+
 
   &::before {
     content: '';
@@ -25,11 +26,12 @@
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
     z-index: -1;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   &:hover {
     color: @tmdb--blue;
+    transition: all 0.3s ease-in-out;
   }
 
   &:hover::before {

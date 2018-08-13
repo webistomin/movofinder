@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TMDb: Movie Searcher</title>
+  <meta name="description" content="THE MOVIE DB APP Made with Vue.js">
+  <meta name="keywords" content="TMDb, Movie App, Vue.js, Movie searcher">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -77,6 +79,7 @@ To emphasise this I use inline style="display: none" -->
         <svg class="page-header__icon" width="20" height="20">
           <use x="0" y="0" xlink:href="#icon-search"></use>
         </svg>
+        Search movie
       </label>
     </div>
     <div class="page-header__toggle">
@@ -274,6 +277,19 @@ To emphasise this I use inline style="display: none" -->
 </footer>
 
 <script src="js/script.min.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+        // Регистрация успешна
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+        // Регистрация не успешна
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+</script>
 </body>
 
 </html>
