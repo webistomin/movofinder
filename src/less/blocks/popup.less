@@ -148,7 +148,92 @@
   }
 
   @media @screen-md {
-    
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: auto;
+    background-color: transparent;
+
+    &::before {
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      background-color: @tmdb--blue;
+      left: 0;
+      top: 0;
+      opacity: 0.9;
+      z-index: 0;
+    }
+
+    &__inner {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: @tmdb--blue;
+      position: relative;
+      z-index: 1;
+      width: 768px;
+      margin: 0 auto;
+    }
+
+    &__img {
+      position: absolute;
+      left: 40px;
+      top: 40px;
+      width: 300px
+    }
+
+    &__heading {
+      min-height: 350px;
+      padding: 0;
+      align-items: flex-end;
+
+      &::before {
+        opacity: 0.7;
+      }
+    }
+
+    &__desc {
+      max-width: 412px;
+      padding-right: 40px;
+      text-align: left;
+    }
+
+    &__title {
+      font-size: 30px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    &__button {
+      top: 40px;
+    }
+
+    &__text {
+      box-sizing: border-box;
+      max-width: 412px;
+      padding: 40px;
+      padding-left: 26px;
+      margin-left: auto;
+      font-size: 14px;
+      line-height: 22px;
+
+      &--small {
+        padding: 20px;
+        padding-left: 0;
+      }
+    }
+
+    &__details {
+      padding: 40px;
+      padding-left: 26px;
+      max-width: 412px;
+      margin-left: auto;
+      box-sizing: border-box;
+    }
+
+    &__detail {
+      padding: 0;
+    }
   }
 
 }
