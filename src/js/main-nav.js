@@ -12,3 +12,14 @@ navToggle.addEventListener('click', function() {
     navToggle.classList.remove('page-header__toggle--opened');
   }
 });
+
+window.addEventListener("keydown", function (event) {
+  if (event.keyCode === 27) {
+    if (navToggle.classList.contains("page-header__toggle--opened")) {
+      navToggle.classList.remove("page-header__toggle--opened");
+      navToggle.classList.add('page-header__toggle--closed');
+      navMain.classList.remove('main-nav--opened');
+      navMain.classList.add('main-nav--closed');
+    }
+  }
+});
