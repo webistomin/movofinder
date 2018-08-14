@@ -29,12 +29,14 @@
     transition: all 0.3s ease-in-out;
   }
 
-  &:hover {
+  &:hover ,
+  &:focus {
     color: @tmdb--blue;
     transition: all 0.3s ease-in-out;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }

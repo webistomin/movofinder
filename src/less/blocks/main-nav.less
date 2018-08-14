@@ -33,6 +33,18 @@
       background-color: @tmdb--blue;
     }
 
+    &:focus {
+      background-color: @tmdb--blue;
+
+      & .main-nav__link{
+        color: @tmdb--green;
+
+        & .main-nav__icon {
+          fill: @tmdb--green;
+        }
+      }
+    }
+
     &:nth-child(odd) {
       border-right: 1px solid @tmdb--blue;
     }
