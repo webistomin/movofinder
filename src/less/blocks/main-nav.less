@@ -17,7 +17,6 @@
     transition: transform 0.3s ease-in-out;
   }
 
-
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -26,29 +25,7 @@
   &__item {
     box-sizing: border-box;
     width: 50%;
-    background-color: @tmdb--green;
     min-height: 150px;
-    border-bottom: 1px solid @tmdb--blue;
-
-    &:hover {
-      background-color: @tmdb--blue;
-    }
-
-    &:focus {
-      background-color: @tmdb--blue;
-
-      & .main-nav__link{
-        color: @tmdb--green;
-
-        & .main-nav__icon {
-          fill: @tmdb--green;
-        }
-      }
-    }
-
-    &:nth-child(odd) {
-      border-right: 1px solid @tmdb--blue;
-    }
   }
 
   &__link {
@@ -61,13 +38,29 @@
     height: 100%;
     padding-top: 30px;
     color: @tmdb--blue;
+    background-color: @tmdb--green;
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
+    border-bottom: 1px solid @tmdb--blue;
+
+    &:nth-child(odd) {
+      border-right: 1px solid @tmdb--blue;
+    }
+
+    &:focus {
+      background-color: @tmdb--blue;
+      color: @tmdb--green;
+
+      & .main-nav__icon {
+        fill: @tmdb--green;
+      }
+    }
 
     &:hover {
       color: @tmdb--green;
+      background-color: @tmdb--blue;
 
       & .main-nav__icon {
         fill: @tmdb--green;
@@ -107,14 +100,13 @@
     }
 
     &::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
       background-color: @tmdb--green;
     }
 
     &::-webkit-scrollbar-thumb {
       background-color: @color-text--second;
     }
-
 
     &--closed {
       transform: scaleY(1);
@@ -132,16 +124,6 @@
       justify-content: center;
       width: 141px;
       min-height: 140px;
-      border: none;
-      border-bottom: 1px solid @tmdb--blue;
-
-      &:nth-child(odd) {
-        border-right: none;
-      }
-
-      &:hover {
-        border-right: 1px solid @tmdb--green;
-      }
     }
 
     &__link {
@@ -149,6 +131,17 @@
       height: 140px;
       outline: none;
       font-weight: 400;
+      border: none;
+      border-bottom: 1px solid @tmdb--blue;
+
+      &:nth-child(odd) {
+        border-right: none;
+      }
+
+      &:hover,
+      &:focus {
+        border-right: 1px solid @tmdb--green;
+      }
     }
   }
 }
