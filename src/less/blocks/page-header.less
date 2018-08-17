@@ -66,6 +66,12 @@
     &:focus + .page-header__label .page-header__icon {
       opacity: 1;
     }
+
+    &:focus {
+      &::placeholder {
+        color: rgba(1, 210, 119, 1);
+      }
+    }
   }
 
   &__toggle {
