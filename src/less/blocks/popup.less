@@ -7,6 +7,8 @@
   z-index: 30;
   background-color: @tmdb--blue;
   overflow: auto;
+  background-image: radial-gradient(at 30% top, rgba(7, 64, 52, 1) 0%, rgba(8, 28, 36, 1) 70%);
+
 
   &--closed {
     display: none;
@@ -152,6 +154,7 @@
 
     &__detail {
       font-size: 20px;
+
     }
   }
 
@@ -164,13 +167,13 @@
 
 
     &__inner {
-      padding-top: 82px;
       padding-bottom: 40px;
       background-color: @tmdb--blue;
       position: relative;
       z-index: 1;
       width: 768px;
       margin: 0 auto;
+
     }
 
     &__img {
@@ -203,7 +206,7 @@
     }
 
     &__button {
-      top: 82px;
+      top: 0px;
     }
 
     &__text {
