@@ -23,6 +23,10 @@
     display: block;
     transition: transform 0.3s ease-in-out;
 
+    &:focus {
+      transition: transform 0.3s ease-in-out;
+      transform: scale(1.05);
+    }
 
     &:hover {
       transition: transform 0.3s ease-in-out;
@@ -34,10 +38,9 @@
       transform: scale(0.95);
     }
 
-    &:focus {
-      transition: transform 0.3s ease-in-out;
-      transform: scale(1.05);
-    }
+
+
+
 
   }
 
