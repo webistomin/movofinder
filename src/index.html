@@ -1,13 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TMDb: Movie Searcher</title>
   <meta name="description" content="THE MOVIE DB APP Made with Vue.js">
   <meta name="keywords" content="TMDb, Movie App, Vue.js, Movie searcher">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#081c24">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -62,7 +64,7 @@ To emphasise this I use inline style="display: none" -->
   </symbol>
 </svg>
 
-<header class="page-header">
+<header class="page-header" role="banner">
   <div class="page-header__inner">
     <div class="page-header__logo">
       <a href="javascript: void(0);" class="page-header__link">
@@ -88,7 +90,7 @@ To emphasise this I use inline style="display: none" -->
       <span></span>
     </button>
   </div>
-  <nav class="main-nav main-nav--closed">
+  <nav class="main-nav main-nav--closed" role="navigation">
     <ul class="main-nav__list">
       <li class="main-nav__item">
         <a href="#" class="main-nav__link" tabindex="0">
@@ -127,7 +129,7 @@ To emphasise this I use inline style="display: none" -->
   </nav>
 </header>
 
-<main class="page-content">
+<main class="page-content" role="main">
   <section class="slider">
     <div class="slider__inner">
       <div class="slider__rating">
