@@ -37,3 +37,12 @@ btn.addEventListener('click', function() {
   }
 });
 
+window.addEventListener("keydown", function (event) {
+  if (event.keyCode === 27) {
+    if (popup.classList.contains('popup--opened')) {
+      popup.classList.remove('popup--opened');
+      popup.classList.add('popup--closed');
+      document.body.style.overflow = 'initial';
+    }
+  }
+});
