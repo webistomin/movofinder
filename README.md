@@ -33,13 +33,6 @@
 *	### `.csscomb.json`
 ---
 
-## Различные тесты
-<img src="mockup/lighthouse.png">
-<img src="mockup/google.png">
-
-## Превью сайта
-<img src="mockup/mockup.png">
-
 [travis-image]: https://travis-ci.org/webistomin/movofinder.svg?branch=master
 [travis-url]: https://travis-ci.org/webistomin/movofinder
 [dependency-image]: https://david-dm.org/webistomin/movofinder/dev-status.svg
